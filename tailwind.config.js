@@ -5,7 +5,14 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'laranja':'#FF6B00',
+      },
+      backgroundImage: {
+        'cine': "url('./img/movie.jpg')"
+      }
+    },
   },
   plugins: [],
 }

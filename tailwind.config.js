@@ -8,9 +8,10 @@ module.exports = {
     extend: {
       colors:{
         'laranja':'#FF6B00',
+        'principal':'#1E272E'
       },
       backgroundImage: {
-        'cine': "url('./img/movie.jpg')"
+        'cine': "url('C:/Users/Cassio/Desktop/Arquivos/Unipampa/Aulas/Programação Web/PampaFlix/public/img/movie.jpg')",
       }
     },
   },

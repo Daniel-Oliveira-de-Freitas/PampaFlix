@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+ 
+Route::get('/filme/descricao', function () {
+    return view('static_pages.filme_descricao');
+});

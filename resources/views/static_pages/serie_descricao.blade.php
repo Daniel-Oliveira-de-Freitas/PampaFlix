@@ -1,24 +1,24 @@
 @extends('fragmentos.main')
-@section('title', 'Descrição filme')
+@section('title', 'Descrição serie')
 @section('content')
     <div class="bg-principal text-white w-full flex justify-content h-screen">
         <div class="ml-5 mt-8 text-center mr-2">
-            <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $filme['poster_path'] }}" alt="{{ $filme['title'] }}">
-            <h1 class="mt-2">Pontuação do IMDB: {{ $filme['popularity'] }}</h1>
+            <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $serie['poster_path'] }}" alt="{{ $serie['name'] }}">
+            <h1 class="mt-2">Pontuação do IMDB: {{ $serie['popularity'] }}</h1>
         </div>
         <div>
             <div class="ml-5">
                 <div class="text-xl mt-5% space-y-3">
-                    <h1 class="text-6xl mb-2%">{{ $filme['title'] }}</h1>
-                    <span>Duração: {{ intdiv($filme['runtime'], 60) . ' : ' . $filme['runtime'] % 60 }}</span>
-                    <h1>Data lançamento: {{ \Carbon\Carbon::parse($filme['release_date'])->format('d/m/Y') }}</h1>
+                    <h1 class="text-6xl mb-2%">{{ $serie['name'] }}</h1>
+                    <span>Número de episodios</span>
+                    <h1>Data lançamento: {{ \Carbon\Carbon::parse($serie['first_air_date'])->format('d/m/Y') }}</h1>
                     <h1>Genêros:</h1>
-                    @foreach ($filme['genres'] as $genero)
+                    @foreach ($serie['genres'] as $genero)
                         <span class="ml-5">{{ $genero['name'] }}</span>
                     @endforeach
                     <h1>Sinopse:</h1>
                 </div>
-                <p class="mt-2%">{{ $filme['overview'] }} </p>
+                <p class="mt-2%">{{ $serie['overview'] }} </p>
 
                 <div class="mt-25% text-center ">
                     <p>Qual a sua avaliação para o filme?</p>

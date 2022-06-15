@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DescricaoController;
+use App\Http\Controllers\FilmesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,27 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
- 
-Route::get('/filme/descricao', function () {
-    return view('static_pages.filme_descricao');
-});
-
+Route::get('/',  [FilmesController::class, 'index']);
 Route::get('/filmes', function () {
     return view('static_pages.filmes');
 });
-
-Route::get('/filme/{id}', function ($id) {
-    return view('static_pages.filme_descricao', ['id' => $id]);
-});
-
 Route::get('/series', function () {
     return view('static_pages.series');
 });
+Route::get('/filme/descricao/{filme}', [DescricaoController::class, 'descricaoFilme'])->name('filme.descricao');
+Route::get('/serie/descricao/{serie}', [DescricaoController::class, 'descricaoSerie'])->name('serie.descricao');
 
-Route::get('/series/{id}', function ($id) {
-    return view('static_pages.serie_descricao', ['id' => $id]);
-});

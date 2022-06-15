@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <div class="bg-principal text-white flex  justify-content h-screen">
+    <div class="bg-principal text-black flex  justify-content h-screen">
         <div class="">
             <img src="" alt="">
             <h1>Home Filmes</h1>

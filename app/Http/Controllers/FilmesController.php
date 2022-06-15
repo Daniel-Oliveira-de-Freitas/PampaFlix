@@ -15,4 +15,19 @@ class FilmesController extends Controller
         return view('welcome', ['popularFilmes' => $popularFilmes,]);
     }
 
+    public function indexFilmes()
+    {
+        $popularFilmes = Http::withToken(config('services.tmdb.token'))
+            ->get('https://api.themoviedb.org/3/movie/popular')
+            ->json()['results'];
+        return view('static_pages.homes.filmes', ['popularFilmes' => $popularFilmes,]);
+    }
+
+    public function indexSeries()
+    {
+        $popularSeries = Http::withToken(config('services.tmdb.token'))
+            ->get('https://api.themoviedb.org/3/tv/popular')
+            ->json()['results'];
+        return view('static_pages.homes.series', ['popularSeries' => $popularSeries,]);
+    }
 }

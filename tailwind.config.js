@@ -11,8 +11,17 @@ module.exports = {
         'principal':'#1E272E'
       },
       backgroundImage: {
-        'cine': "url('C:/Users/Cassio/Desktop/Arquivos/Unipampa/Aulas/Programação Web/PampaFlix/public/img/movie.jpg')",
-      }
+  
+      },
+      margin: {
+        '25%': '25%',
+        '5%': '5%',
+        '2%': '2%',
+        '1%':'1%'
+      },
+       screens: {
+        'custom' :'820px'
+      },
     },
   },
   plugins: [],

@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',  [FilmesController::class, 'index']);
 
-Route::get('/filme/descricao/{filme}', [DescricaoController::class, 'descricaoFilme']);
-Route::get('/serie/descricao/{serie}', [DescricaoController::class, 'descricaoSerie']);
+Route::get('/filme/descricao/{filme}', [DescricaoController::class, 'descricaoFilme'])->name('filme.descricao');
+Route::get('/serie/descricao/{serie}', [DescricaoController::class, 'descricaoSerie'])->name('serie.descricao');

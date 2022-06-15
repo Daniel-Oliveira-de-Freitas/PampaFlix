@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',  [FilmesController::class, 'index']);
-
+Route::get('/filmes', function () {
+    return view('static_pages.filmes');
+});
+Route::get('/series', function () {
+    return view('static_pages.series');
+});
 Route::get('/filme/descricao/{filme}', [DescricaoController::class, 'descricaoFilme'])->name('filme.descricao');
 Route::get('/serie/descricao/{serie}', [DescricaoController::class, 'descricaoSerie'])->name('serie.descricao');
+

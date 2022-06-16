@@ -13,7 +13,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$serie['name']}}</h5>
                         <p class="card-text">{{$serie['overview']}}</p>
-                        <a href="{{route('serie', $serie['id'])}}" class="btn btn-primary">Ver mais</a>
+                        <a href="{{route('serie.descricao', $serie['id'])}}" class="btn btn-primary">Ver mais</a>
                     </div>
                 </div>
             @endforeach

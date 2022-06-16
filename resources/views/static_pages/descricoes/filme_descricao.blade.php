@@ -26,7 +26,7 @@
                     <p>Sem sinopse</p>
                 @endif
             </div>
-            <div class="mt-25% text-center ">
+            <div class="mt-5% text-center ">
                 <p>Qual a sua avaliação para o filme?</p>
                 <div class="justify-center items-center flex cursor-pointer">
                     <svg class="fill-current hover:text-orange-500 w-4" viewBox="0 0 24 24">

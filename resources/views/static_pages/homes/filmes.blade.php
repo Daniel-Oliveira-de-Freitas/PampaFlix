@@ -13,7 +13,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$filme['title']}}</h5>
                         <p class="card-text">{{$filme['overview']}}</p>
-                        <a href="{{route('filme', $filme['id'])}}" class="btn btn-primary">Ver mais</a>
+                        <a href="{{route('filme.descricao', $filme['id'])}}" class="btn btn-primary">Ver mais</a>
                     </div>
                 </div>
                 

@@ -465,6 +465,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-25\% {
   margin-top: 25%;
+  justify-content: center;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -649,4 +650,316 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 3.75rem;
     line-height: 1;
   }
+}
+
+.btn{
+    position: absolute;
+    width: 138px;
+    height: 42px;
+    left: 533px;
+    top: 473px;
+
+    border-radius: 8px;
+}
+
+/* Rectangle 1 */
+
+.rectangle1{
+    position: absolute;
+    width: 220px;
+    height: 39px;
+    left: 101px;
+    top: 319px;
+
+    background: #FFFFFF;
+    border: 1px solid #0C0C0C;
+    border-radius: 12px;
+}
+
+/* Rectangle 3 */
+.rectangle3{
+    position: absolute;
+    width: 220px;
+    height: 39px;
+    left: 469px;
+    top: 437px;
+
+    background: #FFFFFF;
+    border: 1px solid #0C0C0C;
+    border-radius: 12px;
+}
+
+/* Senha */
+
+.senha{
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    left: 473px;
+    top: 400px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.rectangle4{
+    position: absolute;
+    width: 220px;
+    height: 39px;
+    left: 465px;
+    top: 322px;
+
+    background: #FFFFFF;
+    border: 1px solid #0C0C0C;
+    border-radius: 12px;
+
+}
+
+/* Confirmar Senha */
+
+.confirmarSenha{
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    left: 469px;
+    top: 285px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+/* Rectangle 5 */
+
+.rectangle5{
+    position: absolute;
+    width: 220px;
+    height: 39px;
+    left: 790px;
+    top: 322px;
+
+    background: #FFFFFF;
+    border: 1px solid #0C0C0C;
+    border-radius: 12px;
+}
+
+/* Email */
+
+.email{
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    left: 794px;
+    top: 285px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+}
+
+
+/* Nome */
+
+.nome{
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    left: 106px;
+    top: 285px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+}
+
+/* Rectangle 6 */
+.rectangle6{
+
+    position: absolute;
+    width: 220px;
+    height: 39px;
+    left: 101px;
+    top: 434px;
+
+    background: #FFFFFF;
+    border: 1px solid #0C0C0C;
+    border-radius: 12px;
+}
+
+/* Sobrenome */
+.sobrenome{
+    position: absolute;
+    width: 87px;
+    height: 19px;
+    left: 106px;
+    top: 400px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+}
+
+/* btn_Cadastro */
+.btnCadastro{
+    position: absolute;
+    width: 138px;
+    height: 42px;
+    left: 506px;
+    top: 543px;
+
+    border-radius: 8px;
+
+}
+
+/* Já possui uma conta? Entre na sessão */
+.sessao{
+    position: absolute;
+    width: 126px;
+    height: 30px;
+    left: 512px;
+    top: 600px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.userInput{
+    position: absolute;
+    width: 243px;
+    height: 35px;
+    left: 569px;
+    top: 340px;
+
+    background: #FFFFFF;
+    border: 1px solid #0C0C0C;
+    border-radius: 12px;
+}
+
+
+/* password_input */
+
+.passInput{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 243px;
+    height: 35px;
+    left: 569px;
+    top: 423px;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+/* Senha do usuario */
+.senhaUser{
+    position: absolute;
+    width: 132px;
+    height: 19px;
+    left: 670px;
+    top: 392px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+/* Email */
+.emailUser{
+    position: absolute;
+    width: 41px;
+    height: 19px;
+    left: 670px;
+    top: 304px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+/* Esqueci minha senha? */
+.esqueceuSenha{
+    position: absolute;
+    width: 126px;
+    height: 15px;
+    left: 630px;
+    top: 543px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+/* btn_Login */
+.btn_Login{
+    box-sizing: border-box;
+    position: absolute;
+    width: 138px;
+    height: 42px;
+    left: 670px;
+    top: 484px;
+
+    border-style: solid;
+    border-radius: 12px;
+}
+
+/* Não possui conta? Cadastre-se */
+.cadastre{
+    position: absolute;
+    width: 126px;
+    height: 30px;
+    left: 630px;
+    top: 553px;
+
+    font-family: 'Liberation Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #FFFFFF;
 }

@@ -1,10 +1,10 @@
 @extends('fragmentos.main')
-@section('title', 'Bem-vindo ao PampaFlix!')
+@section('title', 'Alterar Informações!')
 @section('content')
     <div class="bg-principal text-white flex  justify-content h-screen">
-        <div class="">
+        <div class="mt-1%">
             <img src="" alt="">
-            <h1 class="">Alterar informações</h1>
+            <h1 class="">Home > Alterar cadastro</h1>
 
 
 

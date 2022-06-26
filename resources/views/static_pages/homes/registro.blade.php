@@ -1,29 +1,45 @@
 @extends('fragmentos.main')
-@section('title', 'Bem-vindo ao PampaFlix!')
+@section('title', 'Cadastro!')
 @section('content')
     <div class="bg-principal text-white flex  justify-content h-screen">
+        <h1 class="mt-1%">Home > Registro</h1>
+
         <div class="">
-            <img src="" alt="">
-            <h1 class="">Home > Registro</h1>
             <div class="container">
-                <label for="uname"><b>Nome</b></label>
-                <input type="text"name="uname" required>
+                <label classe="nome" for="uname"><b>Nome</b></label>
+                <input class="rectangle1" type="text"name="uname" required>
+            </div>
 
-                <label for="sobrenome"><b>Sobrenome</b></label>
-                <input type="text"name="sobrenome" required>
+            <div class="container ">
+                <label class="sobrenome" for="sobrenome"><b>Sobrenome</b></label>
+                <input class="rectangle6" type="text"name="sobrenome" required>
+            </div>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text"name="email" required>
+            <div class="container ">
+                <label class="email" for="email"><b>Email</b></label>
+                <input class="rectangle5" type="text"name="email" required>
+            </div>
 
-                <label for="psw"><b>Senha</b></label>
-                <input type="password" name="psw" required>
+            <div class="container mt-5%">
+            <div class="container ">
+                <label class="senha" for="psw"><b>Senha</b></label>
+                <input class="rectangle4" type="password" name="psw" required>
+            </div>
+            <div>
+                <label class="confirmarSenha" for="psw"><b>Confirmar senha</b></label>
+                <input class="rectangle3" type="password" name="psw" required>
 
-                <label for="psw"><b>Confirmar senha</b></label>
-                <input type="password" name="psw" required>
+            </div>
+            </div>
 
-                <button type="submit">Registrar conta</button>
-                <button type="submit"><a href="{{ route('login') }}">Ja possui uma conta? Realizar login</a></button>
-              </div>
+            <div class="container mt-5%">
+                <div class="btnCadastro">
+                    <button type="submit">Entrar</button>
+                </div>
+            </div>
+        <div class="container">
+            <button class="sessao" type="submit"><a href="{{ route('login') }}">Ja possui uma conta? Faca seu login</a></button>
         </div>
+    </div>
     </div>
 @endsection

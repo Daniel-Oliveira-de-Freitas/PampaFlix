@@ -840,7 +840,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
     width: 126px;
     height: 30px;
-    left: 625px;
+    left: 618px;
     top: 600px;
 
     font-family: 'Liberation Mono', monospace;
@@ -938,17 +938,27 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
     width: 138px;
     height: 35px;
-    left: 650px;
+    left: 635px;
     top: 484px;
-    justify-content: center;
+    background-color: grey;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 4px;
 }
+
+/* position: absolute;
+width: 138px;
+height: 42px;
+left: 615px;
+top: 543px; */
+
 
 /* Não possui conta? Cadastre-se */
 .cadastre{
     position: absolute;
     width: 126px;
     height: 30px;
-    left: 630px;
+    left: 625px;
     top: 553px;
 
     font-family: 'Liberation Mono', monospace;
@@ -1047,6 +1057,7 @@ width: 138px;
 height: 42px;
 left: 615px;
 top: 543px;
+background-color: grey;
 
 border-radius: 8px;
 }
@@ -1139,4 +1150,9 @@ transform: rotate(90deg);
     padding: 10px;
     width: 120px;
     height: 45px;
-    position: absolute; }
+    position: absolute;
+    text-align: center;
+    background-color: grey;
+    border-radius: 8px;
+    left: 624px;
+}

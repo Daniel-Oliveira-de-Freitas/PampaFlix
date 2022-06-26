@@ -828,7 +828,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
     width: 138px;
     height: 42px;
-    left: 506px;
+    left: 650px;
     top: 543px;
 
     border-radius: 8px;
@@ -840,7 +840,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
     width: 126px;
     height: 30px;
-    left: 512px;
+    left: 625px;
     top: 600px;
 
     font-family: 'Liberation Mono', monospace;
@@ -935,15 +935,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* btn_Login */
 .btn_Login{
-    box-sizing: border-box;
     position: absolute;
     width: 138px;
-    height: 42px;
-    left: 670px;
+    height: 35px;
+    left: 650px;
     top: 484px;
-
-    border-style: solid;
-    border-radius: 12px;
+    justify-content: center;
 }
 
 /* Não possui conta? Cadastre-se */
@@ -963,3 +960,183 @@ Ensure the default browser behavior of the `hidden` attribute.
 
     color: #FFFFFF;
 }
+/* Account circle */
+
+.circleAcc{
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    left: 1122px;
+    top: 13px;
+}
+
+/* CSS PARA A TELA DE ALTERAR INFORMAÇÕES DO USUÁRIO */
+
+/* Senha */
+.senhaUsuario{
+position: absolute;
+width: 132px;
+height: 22px;
+left: 760px;
+top: 242px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+/* Email */
+.emailUsuario{
+position: absolute;
+width: 132px;
+height: 22px;
+left: 760px;
+top: 377px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+/* Nome */
+.nomeUsuario{
+position: absolute;
+width: 65px;
+height: 19px;
+left: 510px;
+top: 242px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+/* Sobrenome */
+.sobrenomeUsuario{
+position: absolute;
+width: 112px;
+height: 19px;
+left: 510px;
+top: 382px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+/* btn_Cadastro */
+.btnCadastroUsuario{
+position: absolute;
+width: 138px;
+height: 42px;
+left: 615px;
+top: 543px;
+
+border-radius: 8px;
+}
+
+/* Algum */
+.actualName{
+position: absolute;
+width: 68px;
+height: 24px;
+left: 510px;
+top: 274px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+
+/* ********* */
+.password{
+position: absolute;
+width: 90px;
+height: 24px;
+left: 760px;
+top: 277px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+
+/* EmailDeAlguem@heh.com */
+.emailDeAlguem{
+position: absolute;
+width: 248px;
+height: 24px;
+left: 760px;
+top: 412px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+/* Nome Bueno */
+.nomeBueno{
+position: absolute;
+width: 122px;
+height: 24px;
+left: 510px;
+top: 417px;
+
+font-family: 'Liberation Mono', monospace;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+/* Line 6 */
+.line6{
+position: absolute;
+width: 220px;
+height: 0px;
+left: 576px;
+top: 236px;
+
+border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+}
+
+.rcorners4 {
+    border-radius: 15px;
+    background: #383838;
+    padding: 10px;
+    width: 120px;
+    height: 45px;
+    position: absolute; }

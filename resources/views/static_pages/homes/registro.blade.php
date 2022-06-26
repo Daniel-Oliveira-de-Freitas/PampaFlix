@@ -6,7 +6,7 @@
 
         <div class="">
             <div class="container">
-                <label classe="nome" for="uname"><b>Nome</b></label>
+                <label class="nome" for="uname"><b>Nome</b></label>
                 <input class="rectangle1" type="text"name="uname" required>
             </div>
 
@@ -33,7 +33,7 @@
             </div>
 
             <div class="container mt-5%">
-                <div class="btnCadastro">
+                <div class="btnCadastro rcorners4">
                     <button type="submit">Entrar</button>
                 </div>
             </div>

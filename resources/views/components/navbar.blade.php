@@ -9,6 +9,7 @@
             <li><a class="hover:border-b-2 border-teal-400 hover:delay-75" href="/">Home</a></li>
             <li><a class="hover:border-b-2 border-teal-400 hover:delay-75" href="/filmes">Filmes</a></li>
             <li><a class="hover:border-b-2 border-teal-400 hover:delay-75" href="/series">Series</a></li>
+            <li><a class="hover:border-b-2 border-teal-400 hover:delay-75" href="/series">Login</a></li>
             @auth
                 <li><a class="hover:border-b-2  border-teal-400 hover:delay-75" href="">Favoritos</a></li>
             @endauth

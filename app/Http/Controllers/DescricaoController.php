@@ -12,7 +12,7 @@ class DescricaoController extends Controller
         $filme = Http::withToken(config('services.tmdb.token'))
             ->get('https://api.themoviedb.org/3/movie/' . $id . '?language=pt-BR')
             ->json();
-        return view('static_pages.filme_descricao', ['filme' => $filme,]);
+        return view('static_pages.descricoes.filme_descricao', ['filme' => $filme,]);
     }
 
     public function descricaoSerie($id)
@@ -20,6 +20,7 @@ class DescricaoController extends Controller
         $serie = Http::withToken(config('services.tmdb.token'))
             ->get('https://api.themoviedb.org/3/tv/' . $id . '?language=pt-BR')
             ->json();
-        return view('static_pages.serie_descricao', ['serie' => $serie,]);
+
+        return view('static_pages.descricoes.serie_descricao', ['serie' => $serie,]);
     }
 }

@@ -13,8 +13,6 @@
                     <img src="https://image.tmdb.org/t/p/w500/{{$filme['poster_path']}}" alt="">
                     <div class="card-body mb-2 ">
                         <h5 class="card-title">{{$filme['title']}}</h5>
-
-                        <p class="card-text">{{$filme['overview']}}</p>
                         <a href="{{route('filme.descricao', $filme['id'])}}" class="btn btn-primary">Ver mais</a>
                     </div>
                 </div>

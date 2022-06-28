@@ -1,18 +1,18 @@
 @extends('fragmentos.main')
 @section('title', 'Descrição serie')
 @section('content')
-    <div class="flex flex-col md:flex-row md:h-screen w-sreen bg-principal text-white">
-        <div class="flex-none ml-1% mt-1%">
-            <img class="h-4/4 w-3/4" src="{{ 'https://image.tmdb.org/t/p/w500/' . $serie['poster_path'] }}"
-                alt="{{ $serie['name'] }}">
+<div class="bg-principal text-white md:h-screen">
+    <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row ">
+        <div class="flex-none">
+            <img class="w-64 lg:w-96" src="{{ 'https://image.tmdb.org/t/p/w500/' . $serie['poster_path'] }}" alt="{{ $serie['name'] }}">
         </div>
-        <div>
-            <div class="text-xl mt-5% space-y-3">
-                <h1 class="text-4xl lg:text-6xl">{{ $serie['name'] }}</h1>
-                <h1>Pontuação do IMDB: <span class="text-yellow-300">{{ $serie['vote_average'] }}</span></h1>
-                <h1>Data lançamento: {{ $serie['first_air_date'] }}</h1>
+        <div class="md:ml-24">
+            <h1 class="font-semibold text-4xl lg:text-4xl">{{ $serie['name'] }}</h1>
+            <div class="lg:text-xl mt-5% space-y-3">
+                <h1 for="pontuação:">Pontuação: <span class="text-yellow-300">{{ $serie['vote_average'] }}</span></h1>
+                <h1 for="data lançamento">Data lançamento: <span>{{ \Carbon\Carbon::parse($serie['first_air_date'])->format('d/m/Y') }}</span></h1>
                 <div>
-                    <h1 class="mb-1%">Genêros:</h1>
+                    <label class="mb-1%">Genêros:</label>
                     @foreach ($serie['genres'] as $genero)
                         <span class="ml-5 p-1 bg-slate-500 rounded-md">{{ $genero['name'] }}</span>
                     @endforeach
@@ -24,8 +24,8 @@
                     <p>Sem sinopse</p>
                 @endif
             </div>
-            <div class="mt-25% text-center ">
-                <p>Qual a sua avaliação para a serie?</p>
+            <div class="mt-5% text-center ">
+                <span>Qual a sua avaliação para o filme?</span>
                 <div class="justify-center items-center flex cursor-pointer">
                     <svg class="fill-current hover:text-orange-500 w-4" viewBox="0 0 24 24">
                         <g data-name="Layer 2">
@@ -77,6 +77,5 @@
             </div>
         </div>
     </div>
-
+</div>
 @endsection
-

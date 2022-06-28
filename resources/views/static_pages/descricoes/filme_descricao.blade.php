@@ -3,9 +3,9 @@
 
 @section('content')
     <div class="bg-principal text-white md:h-screen">
-        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row ">
+        <div class="container mx-auto px-4 py-16 flex flex-col sm:flex-row ">
             <div class="flex-none">
-                <img class="w-64 lg:w-96" src="{{ 'https://image.tmdb.org/t/p/w500/' . $filme['poster_path'] }}" alt="{{ $filme['title'] }}">
+                <img class="w-64 h-4/4 lg:w-96" src="{{ 'https://image.tmdb.org/t/p/w500/' . $filme['poster_path'] }}" alt="{{ $filme['title'] }}">
             </div>
             <div class="md:ml-24">
                 <h1 class="font-semibold text-4xl lg:text-4xl">{{ $filme['title'] }}</h1>
@@ -26,7 +26,7 @@
                         <p>Sem sinopse</p>
                     @endif
                 </div>
-                <div class="mt-5% text-center ">
+                <div class="lg:mt-5% text-center ">
                     <span>Qual a sua avaliação para o filme?</span>
                     <div class="justify-center items-center flex cursor-pointer">
                         <svg class="fill-current hover:text-orange-500 w-4" viewBox="0 0 24 24">

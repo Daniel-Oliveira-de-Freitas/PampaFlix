@@ -1,10 +1,10 @@
 @extends('fragmentos.main')
 @section('title', 'Descrição serie')
 @section('content')
-<div class="bg-principal text-white md:h-screen">
+<div class="bg-principal text-white md:h-max min-h-screen">
     <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row ">
         <div class="flex-none">
-            <img class="w-64 h-4/4 lg:w-96" src="{{ 'https://image.tmdb.org/t/p/w500/' . $serie['poster_path'] }}" alt="{{ $serie['name'] }}">
+            <img class="w-64 lg:w-96" src="{{ 'https://image.tmdb.org/t/p/w500/' . $serie['poster_path'] }}" alt="{{ $serie['name'] }}">
         </div>
         <div class="md:ml-24">
             <h1 class="font-semibold text-4xl lg:text-4xl">{{ $serie['name'] }}</h1>

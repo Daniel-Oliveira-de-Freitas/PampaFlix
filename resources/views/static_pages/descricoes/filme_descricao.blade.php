@@ -8,7 +8,7 @@
                 alt="{{ $filme['title'] }}">
         </div>
         <div>
-            <div class="text-xl mt-5% space-y-3">
+            <div class="lg:text-xl mt-5% space-y-3">
                 <h1 class="text-4xl lg:text-6xl">{{ $filme['title'] }}</h1>
                 <h1>Duração: {{ intdiv($filme['runtime'], 60) . ' : ' . $filme['runtime'] % 60 }}</h1>
                 <h1>Pontuação do IMDB: <span class="text-yellow-300">{{ $filme['vote_average'] }}</span></h1>

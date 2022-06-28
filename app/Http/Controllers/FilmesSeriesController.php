@@ -1,11 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
-class FilmesController extends Controller
+class FilmesSeriesController extends Controller
 {
     public function index()
     {

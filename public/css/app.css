@@ -466,6 +466,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .float-right {
   float: right;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .ml-9 {
   margin-left: 2.25rem;
 }
@@ -510,16 +519,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-25\% {
   margin-top: 25%;
-  justify-content: center;
-}
-.ml-2 {
-  margin-left: 0.5rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .block {
   display: block;
@@ -533,23 +532,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden {
   display: none;
 }
-.h-screen {
-  height: 100vh;
-}
 .h-12 {
   height: 3rem;
 }
 .h-24 {
   height: 6rem;
 }
-.h-20 {
-  height: 5rem;
-}
-.h-80 {
-  height: 20rem;
-}
-.h-60 {
-  height: 15rem;
+.h-screen {
+  height: 100vh;
 }
 .w-full {
   width: 100%;
@@ -562,15 +552,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-4 {
   width: 1rem;
-}
-.w-20 {
-  width: 5rem;
-}
-.w-80 {
-  width: 20rem;
-}
-.w-40 {
-  width: 10rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -586,18 +567,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -617,14 +586,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between {
   justify-content: space-between;
 }
-.justify-items-center {
-  justify-items: center;
-}
 .gap-1 {
   gap: 0.25rem;
-}
-.gap-2 {
-  gap: 0.5rem;
 }
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -678,17 +641,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .fill-current {
   fill: currentColor;
 }
-.p-1 {
-  padding: 0.25rem;
-}
 .p-2 {
   padding: 0.5rem;
 }
-.p-5 {
-  padding: 1.25rem;
-}
-.p-12 {
-  padding: 3rem;
+.p-1 {
+  padding: 0.25rem;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -697,17 +654,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-center {
   text-align: center;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
@@ -719,10 +672,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-yellow-300 {
   --tw-text-opacity: 1;
   color: rgb(253 224 71 / var(--tw-text-opacity));
-}
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
@@ -736,36 +685,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (min-width: 640px) {
 
-  .sm\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:grid-rows-5 {
-    grid-template-rows: repeat(5, minmax(0, 1fr));
-  }
-
-  .sm\:gap-4 {
-    gap: 1rem;
-  }
-
   .sm\:gap-2 {
     gap: 0.5rem;
-  }
-
-  .sm\:gap-1 {
-    gap: 0.25rem;
   }
 
   .sm\:text-6xl {
@@ -825,509 +750,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 3.75rem;
     line-height: 1;
   }
-}
-
-.btn{
-    position: absolute;
-    width: 138px;
-    height: 42px;
-    left: 533px;
-    top: 473px;
-
-    border-radius: 8px;
-}
-
-/* Rectangle 1 */
-
-.rectangle1{
-    position: absolute;
-    width: 220px;
-    height: 39px;
-    left: 101px;
-    top: 319px;
-
-    background: #FFFFFF;
-    border: 1px solid #0C0C0C;
-    border-radius: 12px;
-}
-
-/* Rectangle 3 */
-.rectangle3{
-    position: absolute;
-    width: 220px;
-    height: 39px;
-    left: 469px;
-    top: 437px;
-
-    background: #FFFFFF;
-    border: 1px solid #0C0C0C;
-    border-radius: 12px;
-}
-
-/* Senha */
-
-.senha{
-    position: absolute;
-    width: 132px;
-    height: 22px;
-    left: 473px;
-    top: 400px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-}
-
-.rectangle4{
-    position: absolute;
-    width: 220px;
-    height: 39px;
-    left: 465px;
-    top: 322px;
-
-    background: #FFFFFF;
-    border: 1px solid #0C0C0C;
-    border-radius: 12px;
-
-}
-
-/* Confirmar Senha */
-
-.confirmarSenha{
-    position: absolute;
-    width: 132px;
-    height: 22px;
-    left: 469px;
-    top: 285px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-}
-
-/* Rectangle 5 */
-
-.rectangle5{
-    position: absolute;
-    width: 220px;
-    height: 39px;
-    left: 790px;
-    top: 322px;
-
-    background: #FFFFFF;
-    border: 1px solid #0C0C0C;
-    border-radius: 12px;
-}
-
-/* Email */
-
-.email{
-    position: absolute;
-    width: 132px;
-    height: 22px;
-    left: 794px;
-    top: 285px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-
-}
-
-
-/* Nome */
-
-.nome{
-    position: absolute;
-    width: 45px;
-    height: 19px;
-    left: 106px;
-    top: 285px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-
-}
-
-/* Rectangle 6 */
-.rectangle6{
-
-    position: absolute;
-    width: 220px;
-    height: 39px;
-    left: 101px;
-    top: 434px;
-
-    background: #FFFFFF;
-    border: 1px solid #0C0C0C;
-    border-radius: 12px;
-}
-
-/* Sobrenome */
-.sobrenome{
-    position: absolute;
-    width: 87px;
-    height: 19px;
-    left: 106px;
-    top: 400px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-
-}
-
-/* btn_Cadastro */
-.btnCadastro{
-    position: absolute;
-    width: 138px;
-    height: 42px;
-    left: 650px;
-    top: 543px;
-
-    border-radius: 8px;
-
-}
-
-/* Já possui uma conta? Entre na sessão */
-.sessao{
-    position: absolute;
-    width: 126px;
-    height: 30px;
-    left: 618px;
-    top: 600px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-
-.userInput{
-    position: absolute;
-    width: 243px;
-    height: 35px;
-    left: 569px;
-    top: 340px;
-
-    background: #FFFFFF;
-    border: 1px solid #0C0C0C;
-    border-radius: 12px;
-}
-
-
-/* password_input */
-
-.passInput{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 243px;
-    height: 35px;
-    left: 569px;
-    top: 423px;
-
-    background: #FFFFFF;
-    border-radius: 12px;
-}
-
-/* Senha do usuario */
-.senhaUser{
-    position: absolute;
-    width: 132px;
-    height: 19px;
-    left: 670px;
-    top: 392px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-}
-
-/* Email */
-.emailUser{
-    position: absolute;
-    width: 41px;
-    height: 19px;
-    left: 670px;
-    top: 304px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
-}
-
-/* Esqueci minha senha? */
-.esqueceuSenha{
-    position: absolute;
-    width: 126px;
-    height: 15px;
-    left: 630px;
-    top: 543px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height */
-
-    color: #FFFFFF;
-}
-
-/* btn_Login */
-.btn_Login{
-    position: absolute;
-    width: 138px;
-    height: 35px;
-    left: 635px;
-    top: 484px;
-    background-color: grey;
-    border-radius: 8px;
-    text-align: center;
-    padding-top: 4px;
-}
-
-/* position: absolute;
-width: 138px;
-height: 42px;
-left: 615px;
-top: 543px; */
-
-
-/* Não possui conta? Cadastre-se */
-.cadastre{
-    position: absolute;
-    width: 126px;
-    height: 30px;
-    left: 625px;
-    top: 553px;
-
-    font-family: 'Liberation Mono', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-/* Account circle */
-
-.circleAcc{
-    position: absolute;
-    width: 65px;
-    height: 60px;
-    left: 1122px;
-    top: 13px;
-}
-
-/* CSS PARA A TELA DE ALTERAR INFORMAÇÕES DO USUÁRIO */
-
-/* Senha */
-.senhaUsuario{
-position: absolute;
-width: 132px;
-height: 22px;
-left: 760px;
-top: 242px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-/* Email */
-.emailUsuario{
-position: absolute;
-width: 132px;
-height: 22px;
-left: 760px;
-top: 377px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-/* Nome */
-.nomeUsuario{
-position: absolute;
-width: 65px;
-height: 19px;
-left: 510px;
-top: 242px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-/* Sobrenome */
-.sobrenomeUsuario{
-position: absolute;
-width: 112px;
-height: 19px;
-left: 510px;
-top: 382px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-/* btn_Cadastro */
-.btnCadastroUsuario{
-position: absolute;
-width: 138px;
-height: 42px;
-left: 615px;
-top: 543px;
-background-color: grey;
-
-border-radius: 8px;
-}
-
-/* Algum */
-.actualName{
-position: absolute;
-width: 68px;
-height: 24px;
-left: 510px;
-top: 274px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-
-/* ********* */
-.password{
-position: absolute;
-width: 90px;
-height: 24px;
-left: 760px;
-top: 277px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-
-/* EmailDeAlguem@heh.com */
-.emailDeAlguem{
-position: absolute;
-width: 248px;
-height: 24px;
-left: 760px;
-top: 412px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-/* Nome Bueno */
-.nomeBueno{
-position: absolute;
-width: 122px;
-height: 24px;
-left: 510px;
-top: 417px;
-
-font-family: 'Liberation Mono', monospace;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
-
-/* Line 6 */
-.line6{
-position: absolute;
-width: 220px;
-height: 0px;
-left: 576px;
-top: 236px;
-
-border: 1px solid #FFFFFF;
-transform: rotate(90deg);
-}
-
-.rcorners4 {
-    border-radius: 15px;
-    background: #383838;
-    padding: 10px;
-    width: 120px;
-    height: 45px;
-    position: absolute;
-    text-align: center;
-    background-color: grey;
-    border-radius: 8px;
-    left: 624px;
 }

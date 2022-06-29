@@ -466,9 +466,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .float-right {
   float: right;
 }
-.m-0 {
-  margin: 0px;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -539,19 +536,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-screen {
   height: 100vh;
 }
-.h-2\/4 {
-  height: 50%;
-}
-.h-full {
-  height: 100%;
-}
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-max {
-  min-height: -webkit-max-content;
-  min-height: -moz-max-content;
-  min-height: max-content;
 }
 .w-full {
   width: 100%;
@@ -617,6 +603,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-4 {
   border-width: 4px;
 }
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-t-2 {
+  border-top-width: 2px;
+}
 .border-laranja {
   --tw-border-opacity: 1;
   border-color: rgb(255 107 0 / var(--tw-border-opacity));
@@ -624,6 +616,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-teal-400 {
   --tw-border-opacity: 1;
   border-color: rgb(45 212 191 / var(--tw-border-opacity));
+}
+.border-b-laranja {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 107 0 / var(--tw-border-opacity));
+}
+.border-t-laranja {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 107 0 / var(--tw-border-opacity));
 }
 .bg-principal {
   --tw-bg-opacity: 1;
@@ -658,9 +658,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-1 {
   padding: 0.25rem;
-}
-.p-0 {
-  padding: 0px;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -734,18 +731,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 6rem;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:h-max {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-  }
-
-  .md\:h-full {
-    height: 100%;
   }
 
   .md\:flex-row {
@@ -784,6 +773,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {

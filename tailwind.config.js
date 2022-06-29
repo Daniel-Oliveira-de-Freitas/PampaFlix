@@ -11,8 +11,7 @@ module.exports = {
         'principal':'#1E272E'
       },
       backgroundImage: {
-        'cine': 'url("C:/Users/danie/Desktop/5º Semestre/Programação Web/PampaFlix/public/img/movie.jpg")',
-  
+        'cine': 'url("~/img/movie.jpg")',
       },
       margin: {
         '25%': '25%',

@@ -4,7 +4,7 @@
       }
   </style>
   
-<nav class="bg-white flex flex-wrap items-center text-white lg:py-0 py-2 bg-cine bg-center bg-cover">
+<nav class="bg-principal border-b-2 border-b-laranja flex flex-wrap items-center text-white lg:py-0 py-2 bg-cine bg-center bg-cover">
     <div class="flex-1 flex items-center text-xl justify-between">
         <div class="flex items-center justify-center">
             <a href="/">

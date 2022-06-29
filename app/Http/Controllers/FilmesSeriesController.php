@@ -15,7 +15,7 @@ class FilmesSeriesController extends Controller
         ->json()['results'];
         return view('welcome')->with(['nowPlayingFilmes' => $nowPlayingFilmes, 'nowPlayingSeries'=> $nowPlayingSeries]);
     }
-
+ 
     public function indexFilmes()
     {
         $popularFilmes = Http::withToken(config('services.tmdb.token'))

@@ -1,6 +1,7 @@
 @extends('fragmentos.main')
 @section('title', 'Login')
 @section('content')
+<link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <div class="bg-principal text-white flex  justify-content h-screen">
         <h1 class="mt-1%">Home > Login</h1>
         <div class="">

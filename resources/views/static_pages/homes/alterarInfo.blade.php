@@ -1,6 +1,7 @@
 @extends('fragmentos.main')
-@section('title', 'Alterar Informações!')
+@section('title', 'Alterar Informaï¿½ï¿½es!')
 @section('content')
+<link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <div class="bg-principal text-white flex  justify-content h-screen">
         <div class="mt-1%">
             <img src="" alt="">

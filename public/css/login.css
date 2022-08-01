@@ -16,7 +16,7 @@
     height: 39px;
     left: 101px;
     top: 319px;
-
+    color: #0C0C0C;
     background: #FFFFFF;
     border: 1px solid #0C0C0C;
     border-radius: 12px;
@@ -29,7 +29,7 @@
     height: 39px;
     left: 469px;
     top: 437px;
-
+    color: #0C0C0C;
     background: #FFFFFF;
     border: 1px solid #0C0C0C;
     border-radius: 12px;
@@ -59,7 +59,7 @@
     height: 39px;
     left: 465px;
     top: 322px;
-
+    color: #0C0C0C;
     background: #FFFFFF;
     border: 1px solid #0C0C0C;
     border-radius: 12px;
@@ -92,7 +92,7 @@
     height: 39px;
     left: 790px;
     top: 322px;
-
+    color: #0C0C0C;
     background: #FFFFFF;
     border: 1px solid #0C0C0C;
     border-radius: 12px;
@@ -145,7 +145,7 @@
     height: 39px;
     left: 101px;
     top: 434px;
-
+    color: #0C0C0C;
     background: #FFFFFF;
     border: 1px solid #0C0C0C;
     border-radius: 12px;
@@ -205,7 +205,7 @@
     height: 35px;
     left: 569px;
     top: 340px;
-
+    color: #0C0C0C;
     background: #FFFFFF;
     border: 1px solid #0C0C0C;
     border-radius: 12px;
@@ -222,7 +222,7 @@
     height: 35px;
     left: 569px;
     top: 423px;
-
+    color: #0C0C0C;
     background: #FFFFFF;
     border-radius: 12px;
 }
@@ -251,7 +251,7 @@
     height: 19px;
     left: 670px;
     top: 304px;
-
+    
     font-family: 'Liberation Mono', monospace;
     font-style: normal;
     font-weight: 400;

@@ -1,11 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DescricaoController;
 use App\Http\Controllers\FilmesSeriesController;
-use App\Http\Controllers\LoginController;
-// use App\Http\Controllers\LoginController::validate();
-use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,16 +15,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',  [FilmesSeriesController::class, 'index']);
-// Route::get('/', function () {
-//     return "Teste";
-// });
+Route::get('/', function () {
+    return view('welcome');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+Route::get('/',  [FilmesSeriesController::class, 'index'])->name('home');
 Route::get('/filmes', [FilmesSeriesController::class, 'indexFilmes'])->name('filme');
 Route::get('/series', [FilmesSeriesController::class, 'indexSeries'])->name('serie');
 Route::get('/filme/descricao/{filme}', [DescricaoController::class, 'descricaoFilme'])->name('filme.descricao');
 Route::get('/serie/descricao/{serie}', [DescricaoController::class, 'descricaoSerie'])->name('serie.descricao');
 
 // rotas de login
-Route::get('/login', [LoginController::class, 'index'])->name('login');
-Route::get('/registro', [LoginController::class, 'indexRegistro'])->name('registro');
-Route::get('/alterarInfo', [LoginController::class, 'indexAlterarInfo'])->name('alterarInfo');
+
+Route::get('/alterarInfo', [AuthenticatedSessionController::class, 'indexAlterarInfo'])->name('alterarInfo');

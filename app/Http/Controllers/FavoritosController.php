@@ -22,10 +22,7 @@ class FavoritosController extends Controller
         $minhasSeriesFavoritas[] = $this->getContent($fav->serie_id, 'tv');
       }
     }
-    // dd($minhasSeriesFavoritas);
-
-    // dd($meusFavoritos);
-    return view('static_pages.homes.favoritos')->with(['meusFilmesFavoritos' => $meusFilmesFavoritos, 'minhasSeriesFavoritas' => $minhasSeriesFavoritas]);
+    return view('static_pages.perfil.favoritos')->with(['meusFilmesFavoritos' => $meusFilmesFavoritos, 'minhasSeriesFavoritas' => $minhasSeriesFavoritas]);
   }
 
   public function getAllFavorite()

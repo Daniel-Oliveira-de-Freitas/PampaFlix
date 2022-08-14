@@ -1,13 +1,13 @@
 @extends('fragmentos.main')
 @section('title', 'Login')
 @section('content')
-    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
-    <div class="bg-principal text-white flex  justify-content h-screen">
-        <h1 class="mt-1%">Home > Login</h1>
+<link href="{{ asset('css/login.css') }}" rel="stylesheet">
+<div class="bg-principal text-white md:h-max min-h-screen">
+        <h1 >Home > Login</h1>
         <form action="{{ route('login') }}" method="POST">
             @csrf
             @if ($errors->any())
-            <h2 class="text-center text-red-600 text-xl" id="obrigatorio"><small>Usuário ou senha incorretos!</small></h2>
+            <h2 class="flex justify-center text-red-600 text-2xl" id="obrigatorio"><small>Usuário ou senha incorretos!</small></h2>
             @endif
             <div class="container">
                 <label class="emailUser" for="email">Email</label>

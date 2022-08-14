@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="bg-principal text-white md:h-max min-h-screen">
-        <div class="container mx-auto px-4 py-16 flex flex-col sm:flex-row ">
+        <div class="container mx-auto px-4 py-16 flex flex-col sm:flex-row">
             <div class="flex-none">
                 <img class="w-64 lg:w-96" src="{{ 'https://image.tmdb.org/t/p/w500/' . $filme['poster_path'] }}"
                     alt="{{ $filme['title'] }}">

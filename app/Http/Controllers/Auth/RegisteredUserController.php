@@ -20,7 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create()
     {
-        return view('static_pages.homes.registro');
+        return view('static_pages.auth.registro');
     }
 
     /**

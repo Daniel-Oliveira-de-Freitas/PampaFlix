@@ -1,5 +1,5 @@
 @extends('fragmentos.main')
-@section('title', 'Cadastro!')
+@section('title', 'Cadastro de usuario - PampaFlix')
 @section('content')
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <div class="bg-principal text-white flex  justify-content h-screen">
@@ -13,7 +13,7 @@
 
             <div class="container ">
                 <label class="sobrenome" for="sobrenome"><b>Sobrenome</b></label>
-                <input class="rectangle6" type="text"name="sobrenome" required>
+                <input class="rectangle6" type="text"name="lastname" required>
             </div>
 
             <div class="container ">
@@ -25,21 +25,19 @@
                 <div class="container ">
                     <label class="senha" for="psw"><b>Senha</b></label>
                     <input class="rectangle4" type="password" name="psw" required>
-                </div>
-                <div>
-                    <label class="confirmarSenha" for="psw"><b>Confirmar senha</b></label>
-                    <input class="rectangle3" type="password" name="pswconfirm" required>
+                    <div>
+                        <label class="confirmarSenha" for="psw"><b>Confirmar senha</b></label>
+                        <input class="rectangle3" type="password" name="pswconfirm" required>
+                    </div>
                 </div>
             </div>
 
+            <button class="btnCadastro rcorners4 container" type="submit">
+                    <label>Salvar</label>
+            </button>
+            
             <div class="container mt-5%">
-                <div class="btnCadastro rcorners4">
-                    <button type="submit">Salvar</button>
-                </div>
-            </div>
-            <div class="container">
-                <button class="sessao" type="submit"><a href="{{ route('login') }}">Ja possui uma conta? Faca seu
-                        login</a></button>
+                <a class="sessao" href="{{ route('login') }}">Já possui uma conta? Faça o login</a>
             </div>
         </form>
     </div>

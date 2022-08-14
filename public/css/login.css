@@ -37,7 +37,7 @@
 
 /* Senha */
 
-.senha {
+.confirmarSenha {
     position: absolute;
     width: 132px;
     height: 22px;
@@ -68,7 +68,7 @@
 
 /* Confirmar Senha */
 
-.confirmarSenha {
+.senha {
     position: absolute;
     width: 132px;
     height: 22px;
@@ -188,14 +188,12 @@
     height: 30px;
     left: 512px;
     top: 600px;
-
     font-family: 'Liberation Mono', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -483,6 +481,7 @@
     border-radius: 15px;
     background: #383838;
     padding: 10px;
+    text-align: center;
     width: 120px;
     height: 45px;
     position: absolute;

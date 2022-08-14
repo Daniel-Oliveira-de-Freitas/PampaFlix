@@ -32,7 +32,7 @@
               @endguest
               @auth
                   <li><a class="hover:border-b-2  border-teal-400 hover:delay-75" href="/favoritos">Favoritos</a></li>
-                  <li><a class="hover:border-b-2  border-teal-400 hover:delay-75" href="/">Meu Perfil</a></li>
+                  <li><a class="hover:border-b-2  border-teal-400 hover:delay-75" href="/meuPerfil">Meu Perfil</a></li>
                   <li><a class="hover:border-b-2  border-teal-400 hover:delay-75" href="/logout">Sair</a></li>
               @endauth
           </ul>

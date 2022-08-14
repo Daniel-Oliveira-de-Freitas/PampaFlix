@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DescricaoController;
 use App\Http\Controllers\FilmesSeriesController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\MyProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,7 +27,3 @@ Route::get('/filmes', [FilmesSeriesController::class, 'indexFilmes'])->name('fil
 Route::get('/series', [FilmesSeriesController::class, 'indexSeries'])->name('serie');
 Route::get('/filme/descricao/{filme}', [DescricaoController::class, 'descricaoFilme'])->name('filme.descricao');
 Route::get('/serie/descricao/{serie}', [DescricaoController::class, 'descricaoSerie'])->name('serie.descricao');
-
-// rotas de login
-
-Route::get('/alterarInfo', [AuthenticatedSessionController::class, 'indexAlterarInfo'])->name('alterarInfo');

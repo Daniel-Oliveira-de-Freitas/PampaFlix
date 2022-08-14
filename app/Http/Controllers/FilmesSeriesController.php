@@ -5,12 +5,14 @@ use Illuminate\Support\Facades\Http;
 
 class FilmesSeriesController extends Controller
 {
+     const token = 'services.tmdb.token';
+
     public function index()
     {
-        $nowPlayingFilmes = Http::withToken(config('services.tmdb.token'))
+        $nowPlayingFilmes = Http::withToken(config(self::token))
         ->get('https://api.themoviedb.org/3/movie/upcoming?language=pt-BR')
         ->json()['results'];
-        $nowPlayingSeries = Http::withToken(config('services.tmdb.token'))
+        $nowPlayingSeries = Http::withToken(config(self::token))
         ->get('https://api.themoviedb.org/3/tv/top_rated?language=pt-BR')
         ->json()['results'];
         return view('welcome')->with(['nowPlayingFilmes' => $nowPlayingFilmes, 'nowPlayingSeries'=> $nowPlayingSeries]);
@@ -18,7 +20,7 @@ class FilmesSeriesController extends Controller
  
     public function indexFilmes()
     {
-        $popularFilmes = Http::withToken(config('services.tmdb.token'))
+        $popularFilmes = Http::withToken(config(self::token))
             ->get('https://api.themoviedb.org/3/movie/popular?language=pt-BR')
             ->json()['results'];
         return view('static_pages.homes.filmes', ['popularFilmes' => $popularFilmes,]);
@@ -26,7 +28,7 @@ class FilmesSeriesController extends Controller
 
     public function indexSeries()
     {
-        $popularSeries = Http::withToken(config('services.tmdb.token'))
+        $popularSeries = Http::withToken(config(self::token))
             ->get('https://api.themoviedb.org/3/tv/popular?language=pt-BR')
             ->json()['results'];
         return view('static_pages.homes.series', ['popularSeries' => $popularSeries,]);

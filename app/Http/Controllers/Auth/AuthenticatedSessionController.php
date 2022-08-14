@@ -11,11 +11,6 @@ use Illuminate\Support\Facades\Auth;
 class AuthenticatedSessionController extends Controller
 {
 
-
-    public function indexAlterarInfo()
-    {
-        return view("static_pages.homes.alterarInfo");
-    }
     /**
      * Display the login view.
      *

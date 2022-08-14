@@ -1,35 +1,36 @@
 @extends('fragmentos.main')
-@section('title', 'Alterar Informa��es!')
+@section('title', 'Meu Perfil - PampaFlix')
 @section('content')
 <link href="{{ asset('css/login.css') }}" rel="stylesheet">
-    <div class="bg-principal text-white flex  justify-content h-screen">
+    
+<div class="bg-principal text-white flex justify-content h-screen">
+    <label class="flex text-center justify-center ">Meu Perfil</label>
         <div class="mt-1%">
-            <img src="" alt="">
-            <h1 class="">Home > Alterar cadastro</h1>
+            <label>Home > Meu perfil</label>
 
-            <div class="">
+            <div>
                 <div class="container">
                     <label class="nomeUsuario" for="uname"><b>Nome</b></label>
-                    <label class="actualName" for="uname"><b>John</b></label>
+                    <label class="actualName" for="uname">{{$user->name}}</label>
                 </div>
 
                 <div>
                     <label class="senhaUsuario" for="psw"><b>Senha</b></label>
-                    <label class="password" for="psw"><b>*******</b></label>
+                    <label class="password" for="psw">*******</label>
                 </div>
 
                 <div>
                     <label class="sobrenomeUsuario" for="sobrenome"><b>Sobrenome</b></label>
-                    <label class="nomeBueno" for="sobrenome"><b>Doe</b></label>
+                    <label class="nomeBueno" for="sobrenome">{{$user->lastName}}</label>
                 </div>
 
                 <div>
                     <label class="emailUsuario" for="email"><b>Email</b></label>
-                    <label class="emailDeAlguem" for="email"><b>johndoe@example.com</b></label>
+                    <label class="emailDeAlguem" for="email">{{$user->email}}</label>
                 </div>
 
                 <div>
-                    <button class="btnCadastroUsuario" type="submit">Editar</button>
+                    <a type="button" class="btnCadastroUsuario" href="/alterarInfo">Editar Informações</a>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 @section('title', 'Editar Usuario - Pampa Flix')
 @section('content')
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
-    <div class="bg-principal text-white flex justify-content md:h-max min-h-screen">
+    <main class="bg-principal text-white flex justify-content md:h-max min-h-screen">
         <form action="{{ route('alterarInfo_mudar') }}" method="POST">
             @csrf   
             <div class="container">
@@ -33,5 +33,5 @@
                 </div>
             </div>
         </form>
-    </div>
+    </main>
 @endsection
